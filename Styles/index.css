@@ -1,1 +1,210 @@
-/*# sourceMappingURL=index.css.map */
+/*COLORS*/
+/*Accent*/
+/*Active*/
+/*Grey*/
+/*Basic*/
+/*FONT WEIGHT*/
+/*Gradient*/
+.gradient-regular {
+  background: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+}
+
+.gradient-soft {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+.gradient-red {
+  background: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+}
+
+.gradient-supersoft {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.gradient-redtext {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+
+/*FONTS*/
+.hero {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323264;
+}
+
+.h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #323264;
+}
+
+.h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.unordered-list {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.ordered-list {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+/*LINKS*/
+.link-active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.link-hover {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F0145A;
+}
+
+/*OTHER*/
+.wrapper {
+  padding: 0 160px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+.header .r-area-header .t-box-r-box-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.header .r-area-header .languages-box {
+  display: flex;
+}
+.header .r-area-header .languages-box .language {
+  width: 33px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.header .r-area-header .languages-box .language.active {
+  width: 33px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: #F0145A;
+}
+.header .r-area-header .header-number a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header .r-area-header .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 50%;
+}
+.header .r-area-header .b-box-r-box-header {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.homepage-main {
+  position: relative;
+  margin-top: -130px;
+  z-index: 0;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage-main .homepage-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+}
+.homepage-main .homepage-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
