@@ -36,7 +36,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -text-fill-color: transparent;
 }
 
 .h2 {
@@ -207,4 +207,106 @@ body {
   font-size: 38px;
   line-height: 46px;
   color: #FFFFFF;
+}
+
+.tag-box {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.tag-box .title-tag-box {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.tag-box .title-tag-box .h2-active-tag-box {
+  padding-bottom: 3opx;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: right;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.tag-box .title-tag-box .h2-regular-tag-box {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: right;
+  color: #B3B3BA;
+}
+.tag-box .description-tag-box {
+  width: 860px;
+}
+.tag-box .description-tag-box h3 {
+  padding-bottom: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+.tag-box .description-tag-box p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.services-box {
+  padding-top: 60px;
+}
+.services-box h5 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F0145A;
+}
+.services-box h2 {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.description-services-box {
+  padding-top: 60px;
+  width: 494px;
+}
+.description-services-box h4 {
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+}
+.description-services-box p {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.services-box-areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */

@@ -48,7 +48,7 @@ $bold: 700;
 .hero {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: $bold;
   font-size: 38px;
   line-height: 46px;
 
@@ -62,7 +62,7 @@ $bold: 700;
 .h2 {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: $bold;
   font-size: 30px;
   line-height: 37px;
   color: #323264;
@@ -71,7 +71,7 @@ $bold: 700;
 .h3 {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: $bold;
   font-size: 22px;
   line-height: 27px;
   color: #323264;
@@ -80,7 +80,7 @@ $bold: 700;
 .h4 {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: $bold;
   font-size: 16px;
   line-height: 20px;
   color: #323264;
@@ -201,7 +201,7 @@ body {
       background-color: $grey-separator;
       border-radius: 50%;
     }
-    .b-box-r-box-header a {
+    .b-box-r-box-header {
       display: flex;
       justify-content: end;
       gap: 15px;
@@ -212,3 +212,4 @@ body {
     }
   }
 }
+
