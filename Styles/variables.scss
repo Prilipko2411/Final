@@ -38,8 +38,11 @@ $bold: 700;
 .gradient-supersoft {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
-.gradient-redtext {
+.gradient-redtext-back {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+.gradient-redtext {
+  color: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
 
@@ -138,7 +141,7 @@ $bold: 700;
 
 .wrapper {
   padding: 0 160px;
-
+  border-radius: 0px 0px 12px 12px;
 }
 
 .center {
@@ -146,6 +149,11 @@ $bold: 700;
   justify-content: center;
   align-items: center;
 }
+
+.hide {
+  display: none;
+}
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -181,7 +189,7 @@ body {
         border-radius: 8px;
         font-weight: $bold;
       }
-      .language.active {
+      .language-active {
         width: 33px;
         height: 25px;
         border-radius: 8px;
@@ -206,9 +214,19 @@ body {
       justify-content: end;
       gap: 15px;
       padding-top: 16px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-decoration: none;
+      
+      a {
+      display: flex;
+      justify-content: end;
+      gap: 15px;
+      padding-top: 16px;
       font-weight: $bold;
       color: $basic-white;
       text-decoration: none;
+      }
     }
   }
 }

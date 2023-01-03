@@ -1,5 +1,4 @@
 @import "variables.scss";
-
 .homepage-main {
   position: relative;
   margin-top: -130px;
@@ -16,14 +15,22 @@
     left: 50%;
     transform: translate(-50%, 0);
     height: 100%;
-  }
+    margin: 0;
+      opacity: 0;
+      animation: ani 2.5s forwards;
+  
+    @keyframes ani {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    }
+    }
   .homepage-title {
     font-weight: $bold ;
     font-size: 38px;
     line-height: 46px;
     color: $basic-white;
   }
-}
 
 .tag-box {
   padding-top: 60px;
@@ -31,6 +38,7 @@
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
 
 .title-tag-box {
   width: 375px;
@@ -38,7 +46,7 @@
   flex-direction: column;
   gap: 30px;
 
-.h2-active-tag-box {
+.active {
   padding-bottom: 3opx;
 font-weight: $bold;
 font-size: 38px;
@@ -49,16 +57,17 @@ background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
 -webkit-text-fill-color: transparent;
 background-clip: text;
 text-fill-color: transparent;
-    }
- .h2-regular-tag-box {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: $bold;
+}
+
+.h2-tag-box {
+font-weight: bold;
 font-size: 38px;
 line-height: 46px;
 text-align: right;
 color: #B3B3BA;
- }   
+}
+    
+
   } 
 .description-tag-box {
   width: 860px;
@@ -83,7 +92,7 @@ line-height: 30px;
 color: $basic-white;
   }
 }
-}
+
 
 .services-box {
 padding-top: 60px;
@@ -129,8 +138,95 @@ color: $basic-white;
  }
 }
 
+.services-box {
+  a {
+    color: #F0145A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 .services-box-areas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 60px;
+}
+}
+.shadow-for-services-box {
+  display: flex;
+  
+  flex-direction: column;
+  .first-shadow-for-services-box {
+    padding: 0px;
+    height: 10px;
+    width: 1880px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px; 
+  }
+  .second-shadow-for-services-box {
+    height: 10px;
+    width: 1840px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+
+.team-section-box {
+  display: flex;
+  padding: 60px 160px 60px 160px;
+  .team-section-description {
+    padding-left: 30px;
+    padding-top: 30px;
+    height: 298px;
+    width: 1600px;
+    background: $grey-bg;
+    border-radius: 0px 12px 12px 0px;
+  }
+  a {
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: $active-regular;
+text-decoration: none;
+  }
+  h3 {
+padding-top: 5px;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+  }
+  h4 {
+padding-top: 30px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: $grey-text;
+  }
+  p {
+padding-top: 6px;
+
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: $grey-text;
+  }
+}
+
+.team-section-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
