@@ -21,8 +21,12 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
-.gradient-redtext {
+.gradient-redtext-back {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+
+.gradient-redtext {
+  color: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
 /*FONTS*/
@@ -115,12 +119,17 @@
 /*OTHER*/
 .wrapper {
   padding: 0 160px;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hide {
+  display: none;
 }
 
 body {
@@ -183,6 +192,15 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
+.header .r-area-header .b-box-r-box-header a {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 .homepage-main {
   position: relative;
@@ -201,8 +219,29 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   height: 100%;
+  margin: 0;
+  opacity: 0;
+  -webkit-animation: ani 2.5s forwards;
+          animation: ani 2.5s forwards;
 }
-.homepage-main .homepage-title {
+@-webkit-keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.homepage-title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -216,13 +255,14 @@ body {
   align-items: center;
   gap: 60px;
 }
-.tag-box .title-tag-box {
+
+.title-tag-box {
   width: 375px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.tag-box .title-tag-box .h2-active-tag-box {
+.title-tag-box .active {
   padding-bottom: 3opx;
   font-weight: 700;
   font-size: 38px;
@@ -234,19 +274,18 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
-.tag-box .title-tag-box .h2-regular-tag-box {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
+.title-tag-box .h2-tag-box {
+  font-weight: bold;
   font-size: 38px;
   line-height: 46px;
   text-align: right;
   color: #B3B3BA;
 }
-.tag-box .description-tag-box {
+
+.description-tag-box {
   width: 860px;
 }
-.tag-box .description-tag-box h3 {
+.description-tag-box h3 {
   padding-bottom: 30px;
   font-family: "Montserrat";
   font-style: normal;
@@ -255,7 +294,7 @@ body {
   line-height: 37px;
   color: #FFFFFF;
 }
-.tag-box .description-tag-box p {
+.description-tag-box p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -305,8 +344,90 @@ body {
   color: #FFFFFF;
 }
 
-.services-box-areas {
+.services-box a {
+  color: #F0145A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.services-box .services-box-areas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.shadow-for-services-box {
+  display: flex;
+  flex-direction: column;
+}
+.shadow-for-services-box .first-shadow-for-services-box {
+  padding: 0px;
+  height: 10px;
+  width: 1880px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+}
+.shadow-for-services-box .second-shadow-for-services-box {
+  height: 10px;
+  width: 1840px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.team-section-box {
+  display: flex;
+  padding: 60px 160px 60px 160px;
+}
+.team-section-box .team-section-description {
+  padding-left: 30px;
+  padding-top: 30px;
+  height: 298px;
+  width: 1600px;
+  background: #F5F5FA;
+  border-radius: 0px 12px 12px 0px;
+}
+.team-section-box a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+  text-decoration: none;
+}
+.team-section-box h3 {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.team-section-box h4 {
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+.team-section-box p {
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.team-section-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }/*# sourceMappingURL=index.css.map */

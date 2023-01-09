@@ -21,8 +21,12 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
-.gradient-redtext {
+.gradient-redtext-back {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+
+.gradient-redtext {
+  color: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
 /*FONTS*/
@@ -115,12 +119,17 @@
 /*OTHER*/
 .wrapper {
   padding: 0 160px;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hide {
+  display: none;
 }
 
 body {
@@ -156,7 +165,7 @@ body {
   border-radius: 8px;
   font-weight: 700;
 }
-.header .r-area-header .languages-box .language.active {
+.header .r-area-header .languages-box .language-active {
   width: 33px;
   height: 25px;
   border-radius: 8px;
@@ -175,6 +184,15 @@ body {
   border-radius: 50%;
 }
 .header .r-area-header .b-box-r-box-header {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header .r-area-header .b-box-r-box-header a {
   display: flex;
   justify-content: end;
   gap: 15px;
