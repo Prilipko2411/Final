@@ -10,3 +10,10 @@ $('.h2-tag-box').click(function() {
     tab.removeClass('hide')
     currentTarget.addClass('active')
 })
+
+$('.team-slider').slick({
+    dots: true,
+    arrows: false,
+});
+
+
