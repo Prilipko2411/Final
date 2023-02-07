@@ -580,8 +580,15 @@ h3 {
   }
   
 }
-
+@media (max-width: 1960px) {
+  .footer-for-375px {
+    display: none;
+}
+}
 @media (max-width: 1440px) {
+  .footer-for-375px {
+    display: none;
+  }
   .shadow-for-services-box {
     
     .first-shadow-for-services-box {
@@ -1171,6 +1178,9 @@ height: 120px;
   .wrapper {
     padding: 0;
   }
+  .footer-section {
+    display: none;
+  }
   .gradient-supersoft {
     padding: 0px 30px;
   }
@@ -1487,12 +1497,12 @@ height: 120px;
   }
   }
 }
-.footer-375px-section {
-  display: flex;
 
 .footer-for-375px {
   display: flex;
   width: 375px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   
   background: $grey-bg;
   .footer-375px-section {
@@ -1536,7 +1546,6 @@ height: 120px;
   text-align: right;
   color: $main-alt;
   text-decoration: none;
-}
 }
 }
 }
